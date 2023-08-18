@@ -1,0 +1,43 @@
+package com.OrangeHRMApplicationPagesTestCases;
+
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.OrangeHRMApplicationPages.OrangeHRMApplicationLogInPage;
+
+public class OrangeHRMApplicationLogInPageTest extends BaseTest {
+
+	OrangeHRMApplicationLogInPage orangeHRMLogInPage;
+
+	@Test(priority = 1, description = " Validating OrangeHRMApplication LogIn Webpage ")
+	public void logInWebPageLogInPanelTextValidationTest() {
+		orangeHRMLogInPage = new OrangeHRMApplicationLogInPage();
+		orangeHRMLogInPage.logInWebPageLogInPanelText();
+
+	}
+
+	@Test(priority = 2, description = " validating OrangeHRM Application LogIn Functionality ")
+	public void logInFunctionalityTest() {
+		/*
+		 * String userNameTestData="rahulsoni"; String passwordTestData="Rahul@1995";
+		 */
+		orangeHRMLogInPage = new OrangeHRMApplicationLogInPage();
+		// orangeHRMLogInPage.logInTest();
+		orangeHRMLogInPage.logInTest("rahulsoni", "Rahul@1995"); // should be tested with TestData
+
+	}
+
+	@Test(priority = 3, description = " Validating OrangeHRM Application LogInPage LOGO")
+	public void logInWebPageLogoValidationTest() {
+		orangeHRMLogInPage = new OrangeHRMApplicationLogInPage();
+		orangeHRMLogInPage.orangeHRMLogInPageLogo();
+	}
+
+	@Test(priority = 4, description = "Validating login page select drop down")
+	public void orangeHRMLogInPageDropDownTest() {
+
+		orangeHRMLogInPage = new OrangeHRMApplicationLogInPage();
+		orangeHRMLogInPage.orangeHRMLogInPageDropDown();
+	}
+
+}

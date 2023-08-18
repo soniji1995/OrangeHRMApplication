@@ -1,0 +1,295 @@
+package com.OrangeHRM;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+public class OHRMEmployeeList extends BaseTest {
+
+	// no need because we are extending BaseTest class
+	// WebDriver driver;
+	// String applicationUrlAddress =
+	// "http://127.0.01/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard";
+
+	Logger log = Logger.getLogger("OHRMEmployeeList");
+
+	FileInputStream employeeListDataFile;
+	XSSFWorkbook workBook;
+	XSSFSheet testDataSheet;
+	FileOutputStream employeeListFileOutput;
+
+	FileInputStream propertiesFile;
+	Properties properties;
+
+	@Test(priority = 1, description = "Login Test to OrangHRM Application")
+	public void loginOHRMTest() throws IOException {
+
+		// configuring the Log4j properties file
+		PropertyConfigurator.configure("Log4j.properties");
+
+		// identify the properties file
+
+		propertiesFile = new FileInputStream("./src/com/PropertiesFiles/OHRMPropertyFile.properties");
+
+		// creating an object for properties class
+
+		properties = new Properties();
+
+		// loading the properties of file - using properties class object(properties)
+
+		properties.load(propertiesFile);
+
+		// <input name="txtUsername" id="txtUsername" type="text">
+
+		// locator/attribute - id
+		// selector/value - txtUsername
+
+		// identifying userName element
+		By userNameElementProperty = By.id(properties.getProperty("loginWebPageUserNameProperty"));
+
+		// finding userName element
+		WebElement userNameElement = driver.findElement(userNameElementProperty);
+
+		// storing the value of user name into a variable
+		String userId = "rahulsoni";
+		log.info("The user name is :- " + userId);
+
+		// sending the keys through a variable to user name element text box
+		userNameElement.sendKeys(userId);
+		log.info("******* Successfully entered Username*********");
+
+		// <input name="txtPassword" id="txtPassword" autocomplete="off"
+		// type="password">
+
+		// locator/attribute - name
+		// selector/value - txtPassword
+
+		// identifying password element
+		By passwordElementProperty = By.name(properties.getProperty("loginWebPagePasswordProperty"));
+
+		// finding the password element (Text Box)
+		WebElement passwordElement = driver.findElement(passwordElementProperty);
+
+		String passWord = "Rahul@1995";
+		log.info("The password is :- " + passWord);
+		// sending the keys through a variable to password element text box
+
+		passwordElement.sendKeys(passWord);
+		log.info("**********Successfully entered password************");
+
+		// <input type="submit" name="Submit" class="button" id="btnLogin"
+		// value="LOGIN">
+
+		// locator/attribute - className
+		// selector/value - button
+
+		// identifying the button element by class name
+		By buttonElementProperty = By.className(properties.getProperty("loginWebPageLoginButtonProperty"));
+
+		// finding the button element by class name
+		WebElement buttonElement = driver.findElement(buttonElementProperty);
+
+		// performing click operation on button element (login button)
+		buttonElement.click();
+		log.info("Successfully performed click operation on login button");
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/pim/viewPimModule"
+		// id="menu_pim_viewPimModule" class="firstLevelMenu"><b>PIM</b></a>
+
+		// identifying link element PIM
+		By pimElementLocator = By.linkText(properties.getProperty("loginWebPagePIMElementProperty"));
+
+		// identifying link element PIM
+		WebElement pimElement = driver.findElement(pimElementLocator);
+
+		// using action class to perform mouse hover operation
+
+		Actions action = new Actions(driver);
+
+		// moving mouse to pimElement
+
+		action.moveToElement(pimElement).build().perform();
+		log.info("Successfully performed Mouse Hover operation on PIM Link");
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/pim/
+		// viewEmployeeList/reset/1" id="menu_pim_viewEmployeeList">Employee List</a>
+
+		// identifying the link "Employee list"
+
+		By employeeListElementLocator = By.linkText(properties.getProperty("loginWebPageEmployeeListElementProperty"));
+
+		// finding the link "Employee list"
+
+		WebElement employeeListElement = driver.findElement(employeeListElementLocator);
+
+		// performing click operation on the link
+
+		employeeListElement.click();
+		log.info("Successfully performed click operation on employee list link");
+	}
+
+	@Test(priority = 2, description = "Printing the employee list to console and exporting to an excel sheet")
+	public void printingEmployeeListTest() throws IOException {
+
+		// getting an excel sheet to export employee list
+
+		employeeListDataFile = new FileInputStream("./src/com/OHRMEmployeeList/OHRMEmployeeListFile.xlsx");
+
+		// identify the workbook in the the file
+
+		workBook = new XSSFWorkbook(employeeListDataFile);
+
+		// identify the sheet in the workbook
+
+		testDataSheet = workBook.getSheet("Sheet1");
+
+		// inspect the table
+
+		// id = "resultTable" // searching for table
+
+		// By resultTableElementProperty = By.id("resultTable"); unable to locate by id
+
+		// looking by xpath /html/body/div[1]/div[3]/div[2]/div/form/div[4]/table/tbody
+
+		// identifying the webTable in which employee list exist
+
+		By resultTableElementProperty = By.xpath(properties.getProperty("loginWebPageEmployeeTableElementProperty"));
+
+		WebElement resultTableElement = driver.findElement(resultTableElementProperty);
+
+		// identify the elements in the webTable of type row
+
+		By resultTableElementRowsProperty = By
+				.tagName(properties.getProperty("loginWebPageResultTableElementRowsProperty"));
+
+		// finding the number of rows present in the WebTable employee list
+		List<WebElement> resultTableRows = resultTableElement.findElements(resultTableElementRowsProperty);
+
+		// getting the count of rows
+		int resultTableRowCount = resultTableRows.size();
+
+		// System.out.println("The total number of employees in the add employee list
+		// are : - "+resultTableRowCount);
+		log.info("The total number of employees in the add employee list are : - " + resultTableRowCount);
+
+		// going to every row of the Table
+
+		for (int resultTableRowIndex = 0; resultTableRowIndex < resultTableRowCount; resultTableRowIndex++) {
+
+			// going to every row of cell
+
+			// in a webpage going to a particular row and finding the cells
+
+			/// html/body/div[1]/div[3]/div[2]/div/form/div[4]/table/tbody/tr[1]/td[1]
+
+			// identifying the webTable element by tagname
+			By resultTableRowOfCellProperty = By
+					.tagName(properties.getProperty("loginWebPageResultTableRowOfCellProperty"));
+
+			// finding all the rows present in employee list table
+			List<WebElement> resultTableRowOfCells = resultTableRows.get(resultTableRowIndex)
+					.findElements(resultTableRowOfCellProperty);
+
+			// finding number of cells in a row
+
+			// going to webTable Row of all the cells
+
+			int resultTableRowOfCellCount = resultTableRowOfCells.size();
+			// System.out.println("The total number of row of cells are : -
+			// "+resultTableRowOfCellCount);
+			log.info("The total number of row of cells are : - " + resultTableRowOfCellCount);
+
+			// creating a new row in an excel sheet to store data
+			XSSFRow newRow = testDataSheet.createRow(resultTableRowIndex + 1);
+
+			// going to every cell of current created row
+			for (int resultTableRowOfCell = 0; resultTableRowOfCell < resultTableRowOfCellCount
+					/ 2; resultTableRowOfCell++) {
+				// get the data from the webTable of all the row of all the cells with data
+
+				String resultTableData = resultTableRowOfCells.get(resultTableRowOfCell).getText();
+
+				// System.out.println(resultTableData+" ");
+				log.info(resultTableData + "  ");
+
+				// creating a new cell in current row and setting the cell value
+				XSSFCell newRowOfNewCell = newRow.createCell(resultTableRowOfCell);
+
+				newRowOfNewCell.setCellValue(resultTableData);
+
+			}
+
+			// identifying the path to save the file
+
+			employeeListFileOutput = new FileOutputStream(
+					"./src/com/OHRMEmployeListResultFiles/OHRMEmployeeListDataResult.xlsx");
+
+			// saving the operations done on the file and saving the file
+			workBook.write(employeeListFileOutput);
+
+			System.out.println();
+
+		}
+
+	}
+
+	@Test(priority = 3)
+	public void logoutTest() {
+
+		// <a href="#" id="welcome" class="panelTrigger activated-welcome">Welcome
+		// Admin</a>
+
+		// identifying the welcome Admin Element
+
+		By welcomeAdminElementProperty = By.linkText(properties.getProperty("loginWebPageWelcomeAdminElementProperty"));
+
+		// finding the welcome Admin Element
+
+		WebElement welcomeAdminElement = driver.findElement(welcomeAdminElementProperty);
+
+		// performing click operation on welcome Admin Element
+
+		welcomeAdminElement.click();
+		log.info("*****Successfully performed click operation on Welcome Admin Link*****");
+
+		// Getting No such element exception in finding element logout
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/auth/logout">Logout</a>
+		// synchronization
+		// Thread.sleep - java wait
+		// we already have implicit wait which can be used by all web elements
+		// but if we want to timeout for specific web element then we should go with
+		// This is explicit wait time
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
+
+		// identifying the logout element
+
+		By logoutElementLocator = By.linkText(properties.getProperty("loginWebPageLogoutElementProperty"));
+
+		// finding the logout element
+
+		WebElement logoutElement = driver.findElement(logoutElementLocator);
+
+		// performing click operation on logout element to logout from home page
+
+		logoutElement.click();
+		log.info("*******Successfully performed click operation on Logout Link*******");
+	}
+}

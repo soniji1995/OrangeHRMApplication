@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Application Testing" >
+  
+   <test name="OrangeHRM login WebPage Test">
+      <classes>
+         <class name="com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest"/>
+      </classes>
+  </test>
+</suite>

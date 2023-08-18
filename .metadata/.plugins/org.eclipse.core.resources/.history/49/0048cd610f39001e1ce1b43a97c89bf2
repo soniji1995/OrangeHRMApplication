@@ -1,0 +1,7 @@
+package com.OrangeHRM;
+
+public class Abcde extends Abcd {
+public void tech() {
+	System.out.println("Program run successfully");
+}
+}

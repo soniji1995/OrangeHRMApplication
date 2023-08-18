@@ -1,0 +1,18 @@
+package com.OrangeHRMApplicationPagesTestCases;
+
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.OrangeHRMApplicationPages.OrangeHRMApplicationHomePage;
+
+public class OrangeHRMApplicationHomePageTest extends BaseTest {
+
+	@Test(priority = 1, description = "validating login functionality")
+	public void loginFunctionalityTest() {
+
+		OrangeHRMApplicationHomePage orangeHRMHomePage = new OrangeHRMApplicationHomePage();
+		orangeHRMHomePage.loginFunctionalityTest();
+		
+	}
+
+}

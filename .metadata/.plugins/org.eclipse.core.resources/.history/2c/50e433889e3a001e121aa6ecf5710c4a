@@ -1,0 +1,71 @@
+package com.OrangeHRMApplicationPagesTestCases;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.BaseTest.BaseTest;
+
+public class OrangeHRMApplicationHomePageTest extends BaseTest {
+
+	// This is an object repository class - elements identification and operation
+	// doen on the elements
+	// on the webpage is developed
+
+	public OrangeHRMApplicationHomePageTest() // It is a constructor
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+	// <input name="txtUsername" id="txtUsername" type="text">
+
+	// locator/attribute - id
+	// selector/value - txtUsername
+
+	@FindBy(id = "txtUsername")
+	WebElement userNameElement;
+
+//<input name="txtPassword" id="txtPassword" autocomplete="off" type="password">
+
+	// locator/attribute - name
+	// selector/value - txtPassword
+
+	@FindBy(id = "txtPassword")
+	WebElement passwordElement;
+
+//<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+
+	// locator/attribute - className
+	// selector/value - button
+
+	@FindBy(id = "btnLogin")
+	WebElement buttonElement;
+
+	public void loginFunctionalityTest() {
+		
+	    String user = "rahulsoni";
+	    String password = "Rahul@1995";
+	    
+	    userNameElement.sendKeys(user);
+	    
+	    passwordElement.sendKeys(password);
+	    
+	    buttonElement.click();
+
+		String expected_OrangeHRMHomePageTitle = "OrangeHRM";
+		System.out.println("The expected title of OrangeHrm Home Page is :- " + expected_OrangeHRMHomePageTitle);
+
+		String actual_OrangeHRMHomePageTitle = driver.getTitle();
+		System.out.println("The actual title of OrangeHrm Home Page is :- " + actual_OrangeHRMHomePageTitle);
+
+		if (actual_OrangeHRMHomePageTitle.equals(expected_OrangeHRMHomePageTitle)) {
+
+			System.out.println("The expected title of OrangeHrm Home Page is matched :- PASS");
+		} else {
+
+			System.out.println("The expected title of OrangeHrm Home Page is NOT matched :- FAIL");
+		}
+
+	}
+
+}

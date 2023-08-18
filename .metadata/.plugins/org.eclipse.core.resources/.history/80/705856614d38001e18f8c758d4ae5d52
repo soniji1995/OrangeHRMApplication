@@ -1,0 +1,104 @@
+# OrangeHRM Application WebPage UserName Element Property - locator is id
+
+loginWebPageUserNameProperty = txtUsername
+
+# OrangeHRM Application WebPage Password Element Property - locator is name
+
+loginWebPagePasswordProperty = txtPassword
+
+# OrangeHRM Application WebPage Button Element Property - locator is class
+
+loginWebPageLoginButtonProperty = button
+
+# OrangeHRM Application WebPage Welcome Admin link Element Property - locator is link text
+
+loginWebPageWelcomeAdminElementProperty = Welcome Admin
+
+# OrangeHRM Application WebPage link Element Logout Property - locator is linkText
+
+loginWebPageLogoutElementProperty = Logout
+
+# OrangeHRM Application Login Panel Heading Property - locator is linkText
+
+loginWebPageLoginPanelElementProperty = logInPanelHeading
+
+# OrangeHRM Application WebPage link Element PIM Property - locator is linkText
+
+loginWebPagePIMElementProperty = PIM
+
+# OrangeHRM Application WebPage link Element Add Employee Property - locator is linkText
+
+loginWebPageAddEmployeeElementProperty = Add Employee
+
+# OrangeHRM Application WebPage Employee id  Element Property - locator is id
+
+loginWebPageEmployeeIdElementProperty = employeeId
+
+# OrangeHRM Application WebPage actual Employee id  Element Property - locator is id
+
+loginWebPageActualEmployeeIdElementProperty = personal_txtEmployeeId
+
+# OrangeHRM Application WebPage Save Button Element Property - locator is id
+
+loginWebPageSaveButtonElementProperty = btnSave
+
+# OrangeHRM Application WebPage Employee List Element Property - locator is linkText
+
+loginWebPageEmployeeListElementProperty = Employee List
+
+# OrangeHRM Application WebPage Table Element Property - locator is xpath
+
+loginWebPageEmployeeTableElementProperty = /html/body/div[1]/div[3]/div[2]/div/form/div[4]/table/tbody
+
+# OrangeHRM Application WebPage Result Table Rows Element Property - locator is tag name
+
+loginWebPageResultTableElementRowsProperty = tr
+
+# OrangeHRM Application WebPage ResultTable Row Of Cell Element Property - locator is tag name
+
+loginWebPageResultTableRowOfCellProperty = td
+
+# OrangeHRM Application WebPage first Name TextBox Element Property - locator is id
+
+loginWebPageFirstNameElementProperty = firstName
+
+# OrangeHRM Application WebPage Middle Name TextBox Element Property - locator is id
+
+loginWebPageMiddleNameElementProperty = middleName
+
+# OrangeHRM Application WebPage last Name TextBox Element Property - locator is id
+
+loginWebPageLastNameElementProperty = lastName
+
+# OrangeHRM Application WebPage First Name Output TextBox Element Property - locator is id
+
+loginWebPageFirstNameOutputElementProperty = personal_txtEmpFirstName
+
+# OrangeHRM Application WebPage Middle Name Output TextBox Element Property - locator is id
+
+loginWebPageMiddleNameOutputElementProperty = personal_txtEmpMiddleName
+
+# OrangeHRM Application WebPage Last Name Output TextBox Element Property - locator is id
+
+loginWebPageLastNameOutputElementProperty = personal_txtEmpLastName
+
+
+# OrangeHRM Application WebPage Login Page Error Message Property - locator is id
+
+loginWebPageLoginPageErrorMessageProperty = spanMessage
+
+# OrangeHRM Application Add Employee Full Name Heading Property - locator is xpath
+
+addEmployeePageActualFullNameHeading = /html/body/div[1]/div[3]/div/div[1]/div/h1
+
+# OrangeHRM Application Add Employee Personal Details Heading Property - locator is xpath
+
+addEmployeePagePersonalDetailsHeading = /html/body/div[1]/div[3]/div/div[2]/div[1]/h1
+
+
+# OrangeHRM Application Add Employee Page Add Employee Heading Property - locator is xpath
+
+addEmployeePageAddEmployeeHeading = /html/body/div[1]/div[3]/div/div[1]/h1
+
+
+

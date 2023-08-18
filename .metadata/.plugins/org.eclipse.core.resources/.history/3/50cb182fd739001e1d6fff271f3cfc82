@@ -1,0 +1,20 @@
+package com.OrangeHRM;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class CommonOperations {
+
+	public void properties() throws FileNotFoundException {
+		// identify the properties file
+
+		FileInputStream propertiesFile = new FileInputStream("./src/com/PropertiesFiles/OHRMPropertyFile.properties");
+
+		// creating an object for properties class
+
+		Properties properties = new Properties();
+
+	}
+
+}

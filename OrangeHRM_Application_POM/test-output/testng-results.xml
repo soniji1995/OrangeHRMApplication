@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-15T18:17:11 IST" name="Default suite" finished-at="2023-08-15T18:17:46 IST" duration-ms="34793">
+    <groups>
+    </groups>
+    <test started-at="2023-08-15T18:17:11 IST" name="Default test" finished-at="2023-08-15T18:17:46 IST" duration-ms="34793">
+      <class name="com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:11 IST" name="setUp" finished-at="2023-08-15T18:17:18 IST" duration-ms="6196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInWebPageLogInPanelTextValidationTest()[pri:1, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:18 IST" name="logInWebPageLogInPanelTextValidationTest" description=" Validating OrangeHRMApplication LogIn Webpage " finished-at="2023-08-15T18:17:18 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInWebPageLogInPanelTextValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:18 IST" name="tearDown" finished-at="2023-08-15T18:17:18 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:18 IST" name="setUp" finished-at="2023-08-15T18:17:22 IST" duration-ms="4296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInFunctionalityTest()[pri:2, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:22 IST" name="logInFunctionalityTest" description=" validating OrangeHRM Application LogIn Functionality " finished-at="2023-08-15T18:17:26 IST" duration-ms="3680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInFunctionalityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:26 IST" name="tearDown" finished-at="2023-08-15T18:17:27 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:27 IST" name="setUp" finished-at="2023-08-15T18:17:31 IST" duration-ms="4081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInWebPageLogoValidationTest()[pri:3, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:31 IST" name="logInWebPageLogoValidationTest" description=" Validating OrangeHRM Application LogInPage LOGO" finished-at="2023-08-15T18:17:31 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInWebPageLogoValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:31 IST" name="tearDown" finished-at="2023-08-15T18:17:31 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:31 IST" name="setUp" finished-at="2023-08-15T18:17:35 IST" duration-ms="3264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orangeHRMLogInPageDropDownTest()[pri:4, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:35 IST" name="orangeHRMLogInPageDropDownTest" description="Validating login page select drop down" finished-at="2023-08-15T18:17:35 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeHRMLogInPageDropDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:35 IST" name="tearDown" finished-at="2023-08-15T18:17:35 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:35 IST" name="setUp" finished-at="2023-08-15T18:17:38 IST" duration-ms="3224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orangeHRMLogInPageAlternativeLoginButtonTest()[pri:5, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:38 IST" name="orangeHRMLogInPageAlternativeLoginButtonTest" description="Validating login page alternative login button" finished-at="2023-08-15T18:17:38 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeHRMLogInPageAlternativeLoginButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:38 IST" name="tearDown" finished-at="2023-08-15T18:17:39 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:39 IST" name="setUp" finished-at="2023-08-15T18:17:42 IST" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orangeHRMFooterLinkTest()[pri:6, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:42 IST" name="orangeHRMFooterLinkTest" description="Validating login page footer link" finished-at="2023-08-15T18:17:42 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeHRMFooterLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:42 IST" name="tearDown" finished-at="2023-08-15T18:17:43 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:43 IST" name="setUp" finished-at="2023-08-15T18:17:46 IST" duration-ms="3030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orangeHRMLoginPageFooterLinkImagesTest()[pri:7, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:46 IST" name="orangeHRMLoginPageFooterLinkImagesTest" description="Validating images with link in footer" finished-at="2023-08-15T18:17:46 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeHRMLoginPageFooterLinkImagesTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest@36916eb0]" started-at="2023-08-15T18:17:46 IST" name="tearDown" finished-at="2023-08-15T18:17:46 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRMApplicationPagesTestCases.OrangeHRMApplicationLogInPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

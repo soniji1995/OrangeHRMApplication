@@ -1,0 +1,75 @@
+package com.DragAndDrop;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class JQuery_Frame_DragToMyTarget_GetText {
+	
+WebDriver driver;
+	
+    String applicationUrlAddress = "https://jqueryui.com/droppable/";
+    
+    public void applicationLaunch() {
+    	
+    	System.setProperty("webdriver.chrome.driver", "./BrowserDriverFiles/chromedriver.exe");
+		
+		
+		driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get(applicationUrlAddress);
+    }
+    
+    public void frame_DragMeToMyTargetGetText()
+    {
+    	
+//identifying the frame on the webpage
+//<iframe src="/resources/demos/droppable/default.html" class="demo-frame"></iframe>
+
+    	By webPageFrameProperty = By.className("demo-frame");
+    	
+    	WebElement webPageFrame = driver.findElement(webPageFrameProperty);
+    	
+// we have to switch the driver focus on the frame 
+    	
+    	driver.switchTo().frame(webPageFrame);
+    	
+// id = "draggable" this is an id of the dragtomytarget element //if we are going to find this element
+// directly on the webPage we will get NoSuchElement Exception because we have to switch the focus of driver 
+// to the frame because this element is located under frame
+    	//id = "draggable"
+// It may be a hidden element    	
+// we can also look for different properties if it's not getting found    	
+//Thread.sleep(5000); - looking for synchronization if driver is not able to locate the element then
+//we can hold the thread for 5 secs
+//go and check for the element properties if it comes under frame/iframe.    	
+    	
+    	By dragMeToMyTargetProperty = By.id("draggable");
+    	
+    	WebElement dragMeToMyTarget = driver.findElement(dragMeToMyTargetProperty);
+    	
+    	String dragMeToMyTarget_Text = dragMeToMyTarget.getText();
+    	
+    	System.out.println("The Text of the element Drag Me To My Target is : - "+dragMeToMyTarget_Text);
+    	
+    }
+    
+    public static void main(String[] args) {
+		
+    	JQuery_Frame_DragToMyTarget_GetText frame = new JQuery_Frame_DragToMyTarget_GetText();
+    	
+    	frame.applicationLaunch();
+    	frame.frame_DragMeToMyTargetGetText();
+    	//frame.applicationClose();
+    	
+	}
+    
+    public void applicationClose()
+   	{
+   		driver.quit();
+   	}
+
+}

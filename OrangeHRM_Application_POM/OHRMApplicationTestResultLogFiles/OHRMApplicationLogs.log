@@ -1,0 +1,199 @@
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+[main] INFO Log -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates tohttp://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+[main] INFO Log -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+[main] INFO Log -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - ******* Successfully entered Username *********
+[main] INFO Log - ******* Successfully entered Password *********
+[main] INFO Log - Successfully performed click operation on login button
+[main] INFO Log -  The Expected Text of OrangeHRM Application HomePage is Welcome
+[main] INFO Log -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+[main] INFO Log -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 
+[main] INFO Log - ************** Chrome Browser Launched Successfully*************** 
+[main] INFO Log -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+[main] INFO Log -  OrangeHRM Application LogIN WebPage footer contains linkdln,facebook,twitter,youtube images with link - PASS
+[main] INFO Log - ************** OrangeHRM Application Closed Successfully **************** 

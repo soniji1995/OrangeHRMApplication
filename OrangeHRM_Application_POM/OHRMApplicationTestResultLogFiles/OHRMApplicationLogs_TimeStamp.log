@@ -1,0 +1,199 @@
+2023-08-15 16:17:53,900 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:17:56,714 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:17:57,533 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 16:18:00,062 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:18:02,956 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:18:06,122 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 16:18:06,265 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 16:18:06,293 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 16:18:06,978 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 16:18:09,750 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:18:10,579 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:18:10,850 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 16:18:11,214 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 16:42:53,263 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:42:56,116 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:42:56,807 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 16:42:58,390 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:42:59,738 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:43:00,102 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 16:43:00,241 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 16:43:03,121 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 16:43:03,135 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 16:43:03,244 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 16:43:03,260 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 16:43:03,975 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 16:43:05,961 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 16:43:06,790 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 16:43:07,053 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 16:43:07,399 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:07:28,762 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:07:29,538 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:07:30,332 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:07:32,208 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:07:33,152 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:07:33,477 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 17:07:33,606 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 17:07:36,141 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 17:07:36,186 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 17:07:36,304 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 17:07:36,331 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 17:07:36,803 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:07:38,821 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:07:39,552 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:07:39,834 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 17:07:40,198 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:07:42,137 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:07:43,164 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:07:43,413 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 17:07:43,801 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:18:20,294 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:18:21,246 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:18:21,865 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:18:23,233 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:18:24,109 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:18:24,455 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 17:18:24,582 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 17:18:27,138 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 17:18:27,178 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 17:18:27,297 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 17:18:27,324 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 17:18:27,778 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:18:30,105 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:18:34,257 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:18:34,562 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 17:18:35,023 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:18:37,298 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:18:38,899 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:18:39,146 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 17:18:39,510 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:18:41,551 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:18:42,324 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:18:42,571 - Log -INFO -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+2023-08-15 17:18:42,853 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:20,124 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:21,041 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:21,774 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:24,013 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:24,842 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:25,230 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 17:36:25,362 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 17:36:27,623 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 17:36:27,650 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 17:36:27,761 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 17:36:27,784 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 17:36:28,308 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:30,264 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:30,970 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:31,277 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 17:36:31,603 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:33,201 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:34,002 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:34,230 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 17:36:34,570 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:35,965 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:36,764 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:37,030 - Log -INFO -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+2023-08-15 17:36:37,392 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:36:38,897 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:36:39,675 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:36:40,086 - Log -INFO - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+2023-08-15 17:36:40,098 - Log -INFO -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates tohttp://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+2023-08-15 17:36:40,555 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:26,954 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:28,903 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:29,659 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:31,978 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:34,008 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:34,394 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 17:52:34,533 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 17:52:37,175 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 17:52:37,199 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 17:52:37,323 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 17:52:37,358 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 17:52:37,873 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:40,501 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:41,619 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:41,951 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 17:52:42,396 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:44,452 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:45,460 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:45,692 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 17:52:46,076 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:48,224 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:49,778 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:50,017 - Log -INFO -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+2023-08-15 17:52:50,391 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:52,076 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:52,877 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:53,301 - Log -INFO - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+2023-08-15 17:52:53,311 - Log -INFO -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+2023-08-15 17:52:53,672 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:52:55,338 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:52:56,042 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:52:56,586 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:55:53,610 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:55:54,379 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:55:55,022 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:55:56,382 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:55:57,379 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:55:57,716 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 17:55:57,859 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 17:56:01,126 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 17:56:01,139 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 17:56:01,223 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 17:56:01,232 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 17:56:01,557 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:56:03,035 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:56:03,890 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:56:04,176 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 17:56:04,530 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:56:05,915 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:56:06,735 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:56:06,969 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 17:56:07,335 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:56:08,850 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:56:09,552 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:56:09,792 - Log -INFO -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+2023-08-15 17:56:10,062 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:56:11,379 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:56:12,166 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:56:12,553 - Log -INFO - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+2023-08-15 17:56:12,564 - Log -INFO -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+2023-08-15 17:56:12,890 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 17:56:14,232 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 17:56:15,054 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 17:56:15,613 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:17,049 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:17,901 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:18,647 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:21,579 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:22,786 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:23,283 - Log -INFO - ******* Successfully entered Username *********
+2023-08-15 18:17:23,437 - Log -INFO - ******* Successfully entered Password *********
+2023-08-15 18:17:26,422 - Log -INFO - Successfully performed click operation on login button
+2023-08-15 18:17:26,478 - Log -INFO -  The Expected Text of OrangeHRM Application HomePage is Welcome
+2023-08-15 18:17:26,620 - Log -INFO -  The actual text of OrangeHRM Application HomePage is :- Welcome Admin
+2023-08-15 18:17:26,629 - Log -INFO -  Successfully Navigated to OrangeHRM Application HomePage - PASS 
+2023-08-15 18:17:27,119 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:29,575 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:31,063 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:31,330 - Log -INFO -  OrangeHRM Application LogIN WebPage contains LOGO - PASS
+2023-08-15 18:17:31,762 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:33,880 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:34,858 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:35,189 - Log -INFO -  OrangeHRM Application LogIN WebPage contains select drop down - PASS
+2023-08-15 18:17:35,558 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:37,792 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:38,600 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:38,879 - Log -INFO -  OrangeHRM Application LogIN WebPage contains alternative login button - PASS
+2023-08-15 18:17:39,278 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:41,451 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:42,184 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:42,609 - Log -INFO - The URL Address of the Footer link is :- http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard
+2023-08-15 18:17:42,616 - Log -INFO -  OrangeHRM Application LogIN WebPage footer contains a link OrangeHRM, Inc which navigates to http://127.0.0.1/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard - PASS
+2023-08-15 18:17:43,021 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 
+2023-08-15 18:17:45,154 - Log -INFO - ************** Chrome Browser Launched Successfully*************** 
+2023-08-15 18:17:45,900 - Log -INFO -  Successfully Navigated to OrangeHRM Application LogIN WebPage 
+2023-08-15 18:17:46,315 - Log -INFO -  OrangeHRM Application LogIN WebPage footer contains linkdln,facebook,twitter,youtube images with link - PASS
+2023-08-15 18:17:46,624 - Log -INFO - ************** OrangeHRM Application Closed Successfully **************** 

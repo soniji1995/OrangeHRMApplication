@@ -1,0 +1,36 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Application Testing" parallel="tests" >
+  
+   <test name="LogInTest">
+      <classes>
+         <class name="com.OrangeHRM.OHRMLogin_With_MultipleTestData"/>
+      </classes>
+  </test>
+  
+  <test name="AddEmployeeTest">
+      <classes>
+         <class name="com.OrangeHRM.OHRMAddEmployeeFromExcelFile"/>
+      </classes>
+  </test>
+ 
+ <test name="AddMultipleEmployeeTest">
+      <classes>
+         <class name="com.OrangeHRM.OHRMAddMultipleEmployee"/>
+      </classes>
+  </test>
+ 
+ <test name ="ValidateMultipleFunctionalitiesAndPages">
+	 <classes>
+		 <class name ="OHRMValidateMultipleFunctionalitiesAndPages"/>
+	 </classes>
+ </test>
+ 
+  <test name="EmployeeListTest">
+      <classes>
+         <class name="com.OrangeHRM.OHRMEmployeeList"/>
+      </classes>
+  </test>
+  
+  
+</suite>

@@ -1,0 +1,75 @@
+package stepDefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+
+	WebDriver driver;
+	String applicationUrlAddress = "http://127.0.01/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard";
+
+	@Given("^User should Open Chrome Browser on the System$")
+	public void user_should_Open_Chrome_Browser_on_the_System() {
+
+		// Automating chrome browser
+
+		System.setProperty("webdriver.chrome.driver", "./BrowserDriverFiles/chromedriver.exe");
+
+		driver = new ChromeDriver();
+	}
+
+	@When("^User enters valid Url Address of OrangeHRM Application$")
+	public void user_enters_valid_Url_Address_of_OrangeHRM_Application() {
+
+		driver.get(applicationUrlAddress);
+
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+
+	@Then("^User should be navigated to OrangeHRM Application LogIn WebPage$")
+	public void user_should_be_navigated_to_OrangeHRM_Application_LogIn_WebPage() {
+
+		By loginPanelHeadingProperty = By.id("logInPanelHeading");
+
+		WebElement loginPanelHeadingElement = driver.findElement(loginPanelHeadingProperty);
+
+		String expected_LoginPanelHeadingText = "LOGIN Panel";
+
+		System.out.println("The expected login page Login Panel Text is :- " + expected_LoginPanelHeadingText);
+
+		String actual_LoginPanelHeadingText = loginPanelHeadingElement.getText();
+
+		System.out.println("The actual login page Login Panel Text is :- " + actual_LoginPanelHeadingText);
+
+		if (actual_LoginPanelHeadingText.contains(expected_LoginPanelHeadingText)) {
+
+			System.out.println("Successfully navigated to OrangeHRM Application Login Page- PASS");
+		}
+
+		else {
+
+			System.out.println("Failed to navigate to OrangeHRM Application Login Page - FAIL");
+		}
+
+	}
+
+	@Then("^User should close the Browser with the OrangeHRMApplication Opened$")
+	public void user_should_close_the_Browser_with_the_OrangeHRMApplication_Opened() {
+
+		driver.quit();
+
+	}
+
+}

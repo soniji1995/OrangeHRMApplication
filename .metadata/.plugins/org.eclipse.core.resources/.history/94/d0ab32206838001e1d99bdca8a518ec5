@@ -1,0 +1,361 @@
+package com.OrangeHRM;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+public class OHRMAddEmployeeWithPhotographFromExcelFile extends BaseTest {
+
+	// no need because we are extending BaseTest class
+	// WebDriver driver;
+	// String applicationUrlAddress =
+	// "http://127.0.01/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard";
+
+	Logger log = Logger.getLogger("OHRMAddEmployeeWithPhotographFromExcelFile");
+	FileInputStream addEmployeeFile;
+	XSSFWorkbook addEmployeeWorkBook;
+	XSSFSheet addDataSheet;
+	XSSFRow row;
+	FileOutputStream outputFile;
+
+	FileInputStream propertiesFile;
+	Properties properties;
+
+	@Test(priority = 1, description = "adding the employee Test")
+	public void addingEmployeeTest() throws IOException, InterruptedException {
+
+		// configuring the Log4j properties file
+		PropertyConfigurator.configure("Log4j.properties");
+
+		// identify the properties file
+
+		propertiesFile = new FileInputStream("./src/com/PropertiesFiles/OHRMPropertyFile.properties");
+
+		// creating an object for properties class
+
+		properties = new Properties();
+
+		// loading the properties of file - using properties class object(properties)
+
+		properties.load(propertiesFile);
+
+		// <input name="txtUsername" id="txtUsername" type="text">
+
+		// locator/attribute - id
+		// selector/value - txtUsername
+
+		// identifying userName element
+		By userNameElementProperty = By.id(properties.getProperty("loginWebPageUserNameProperty"));
+
+		// finding userName element
+		WebElement userNameElement = driver.findElement(userNameElementProperty);
+
+		// sending the keys to user name element
+		// storing the user name into a variable
+
+		String userid = properties.getProperty("UserName");
+		log.info("The user name is : " + userid);
+
+		userNameElement.sendKeys(userid);
+		log.info("******* Successfully entered Username*********");
+
+		// <input name="txtPassword" id="txtPassword" autocomplete="off"
+		// type="password">
+
+		// locator/attribute - name
+		// selector/value - txtPassword
+
+		// identifying password element
+		By passwordElementProperty = By.name(properties.getProperty("loginWebPagePasswordProperty"));
+
+		// finding password element
+		WebElement passwordElement = driver.findElement(passwordElementProperty);
+
+		// sending the keys to password element
+		// storing the password into a variable
+
+		String passWord = properties.getProperty("Password");
+		log.info("The Password is :- " + passWord);
+
+		// sending the keys through a variable to password element text box
+		passwordElement.sendKeys(passWord);
+		log.info("**********Successfully entered password************");
+
+		// <input type="submit" name="Submit" class="button" id="btnLogin"
+		// value="LOGIN">
+
+		// locator/attribute - className
+		// selector/value - button
+
+		// identifying button element
+		By buttonElementProperty = By.className(properties.getProperty("loginWebPageLoginButtonProperty"));
+
+		// finding button element
+		WebElement buttonElement = driver.findElement(buttonElementProperty);
+
+		// performing click operation on button element
+		buttonElement.click();
+		log.info("Successfully performed click operation on login button");
+
+		// <b>PIM</b>
+		// identifying link element "PIM"
+		By pimElementProperty = By.linkText(properties.getProperty("loginWebPagePIMElementProperty"));
+
+		// finding link element PIM
+		WebElement pimElement = driver.findElement(pimElementProperty);
+
+		// Action class is used to perform both mouse and keyboard related key
+		// operations
+		Actions action = new Actions(driver);
+
+		// performing mouse hover operation on link element PIM
+		action.moveToElement(pimElement).build().perform();
+		log.info("******* Successfully performed mouse hover operation on PIM Link********");
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/pim/addEmployee"
+		// id="menu_pim_addEmployee">Add Employee</a>
+
+		// identifying link element "Add Employee"
+		By addEmployeeElementproperty = By.linkText(properties.getProperty("loginWebPageAddEmployeeElementProperty"));
+
+		// finding link element "Add Employee"
+		WebElement addEmployeeElement = driver.findElement(addEmployeeElementproperty);
+
+		// performing click operation on link element "Add Employee"
+		addEmployeeElement.click();
+		log.info("******* Successfully performed click operation on add employee link********");
+
+		// <input class="formInputText" maxlength="30" type="text" name="firstName"
+		// id="firstName">
+		// <input class="formInputText" maxlength="30" type="text" name="middleName"
+		// id="middleName">
+		// <input class="formInputText" maxlength="30" type="text" name="lastName"
+		// id="lastName">
+
+		// identifying first,middle,last TextBox Element
+		By firstNameElementProperty = By.id(properties.getProperty("loginWebPageFirstNameElementProperty"));
+		By middleNameElementProperty = By.id(properties.getProperty("loginWebPageMiddleNameElementProperty"));
+		By lastNameElementProperty = By.id(properties.getProperty("loginWebPageLastNameElementProperty"));
+
+		// finding first,middle,last TextBox Element
+		WebElement firstNameElement = driver.findElement(firstNameElementProperty);
+		WebElement middleNameElement = driver.findElement(middleNameElementProperty);
+		WebElement lastNameElement = driver.findElement(lastNameElementProperty);
+
+		// <input class="formInputText valid" maxlength="10" type="text"
+		// name="employeeId" value="0002" id="employeeId">
+
+		// identifying link element "employeeId"
+
+		By employeeIdElementProperty = By.id(properties.getProperty("loginWebPageEmployeeIdElementProperty"));
+
+		// identifying employeeId text box element
+		WebElement autoGeneratedIdElement = driver.findElement(employeeIdElementProperty);
+
+		// finding(autogenerated Id) the value stored in employeeId text box element
+		String autoGeneratedId = autoGeneratedIdElement.getAttribute("value");
+
+		// System.out.println("The value of auto generated id is : "+autoGeneratedId);
+		log.info("The value of auto generated id is : " + autoGeneratedId);
+
+		// identifying the excel file
+		addEmployeeFile = new FileInputStream("./src/com/OHRMAddEmployeeDataFiles/AddEmployeeTestData.xlsx");
+
+		// identify the workbook in the the file
+		addEmployeeWorkBook = new XSSFWorkbook(addEmployeeFile);
+
+		// identify the sheet in the workbook
+		addDataSheet = addEmployeeWorkBook.getSheet("Sheet1");
+
+		// in the sheet identify number of active rows
+		int rowCount = addDataSheet.getLastRowNum();
+
+		// to go to all active rows
+		for (int rowIndex = 1; rowIndex <= rowCount; rowIndex++) {
+
+			row = addDataSheet.getRow(rowIndex);
+
+			int rowOfCellCount = row.getLastCellNum();
+
+			// going to every cell of active row
+			for (int rowOfCellIndex = 0; rowOfCellIndex < rowOfCellCount; rowOfCellIndex++) {
+
+				// getting first,middle,last name data from excel sheet row's active cell
+				// and sending the data to firstName,middlename and last name element text box
+
+				String fName = row.getCell(rowOfCellIndex).getStringCellValue();
+				firstNameElement.sendKeys(fName);
+				log.info("The expected first name  is : " + fName);
+				rowOfCellIndex++;
+
+				String mName = row.getCell(rowOfCellIndex).getStringCellValue();
+				middleNameElement.sendKeys(mName);
+				log.info("The expected middle name  is : " + mName);
+				rowOfCellIndex++;
+
+				String lName = row.getCell(rowOfCellIndex).getStringCellValue();
+				lastNameElement.sendKeys(lName);
+				log.info("The expected last name  is : " + lName);
+				// identifying the path to save the file
+				outputFile = new FileOutputStream(
+						"./src/com/OHRMAddEmployeeDataResultFiles/AddEmployeeTestDataResult.xlsx");
+
+				// saving the operations done on the file
+				addEmployeeWorkBook.write(outputFile);
+
+			}
+		}
+
+		Actions act = new Actions(driver);
+
+		act.sendKeys(Keys.TAB).build().perform();
+
+		act.sendKeys(Keys.TAB).build().perform();
+
+		act.sendKeys(Keys.ENTER).build().perform();
+
+		Thread.sleep(5000);
+
+		java.lang.Runtime.getRuntime().exec(
+				"C:\\Users\\Dell\\OneDrive\\Desktop\\Application Under Testing\\WebApplicationTesting\\AutoITScripts\\addEmployeePhotoScript.exe");
+
+		Thread.sleep(5000);
+
+		log.info("Successfully Added the employee photgraph");
+		// <input type="button" class="" id="btnSave" value="Save">
+
+		// identifying the save button element using id
+
+		By btnElementProperty = By.id(properties.getProperty("loginWebPageSaveButtonElementProperty"));
+
+		// finding the save button element using id
+		WebElement btnElement = driver.findElement(btnElementProperty);
+
+		// performing click operation on button element
+
+		btnElement.click();
+		log.info("******* Successfully performed click operation on save button********");
+
+		// <input value="Rahul" type="text" name="personal[txtEmpFirstName]"
+		// class="block default editable" maxlength="30" title="First Name"
+		// id="personal_txtEmpFirstName" disabled="disabled">
+
+		// getting the values stored in first,middle,last name text box elements
+
+		String firstName = driver
+				.findElement(By.id(properties.getProperty("loginWebPageFirstNameOutputElementProperty")))
+				.getAttribute("value");
+
+		// <input value="kumar" type="text" name="personal[txtEmpMiddleName]"
+		// class="block default editable" maxlength="30" title="Middle Name"
+		// id="personal_txtEmpMiddleName" disabled="disabled">
+
+		String middleName = driver
+				.findElement(By.id(properties.getProperty("loginWebPageMiddleNameOutputElementProperty")))
+				.getAttribute("value");
+
+		// <input value="soni" type="text" name="personal[txtEmpLastName]" class="block
+		// default editable"
+		// maxlength="30" title="Last Name" id="personal_txtEmpLastName"
+		// disabled="disabled">
+
+		String lastName = driver
+				.findElement(By.id(properties.getProperty("loginWebPageLastNameOutputElementProperty")))
+				.getAttribute("value");
+
+		// System.out.println("The value in First Name is : "+firstName);
+		log.info("The actual First Name is : " + firstName);
+
+		// System.out.println("The value in Middle Name is : "+middleName);
+		log.info("The actual Middle Name is : " + middleName);
+
+		// System.out.println("The value in Last Name is : "+lastName);
+		log.info("The actual Last Name is : " + lastName);
+
+		// getting the total number of rows present in
+		int rowCount2 = addDataSheet.getLastRowNum();
+
+		// to go to all active rows in the sheet
+		for (int rowIndex2 = 1; rowIndex2 <= rowCount2; rowIndex2++) {
+
+			// finding the total number of cells in active row
+			int rowOfCellCount2 = addDataSheet.getRow(rowIndex2).getLastCellNum();
+
+			for (int rowOfCellIndex2 = 0; rowOfCellIndex2 < rowOfCellCount2; rowOfCellIndex2++) {
+
+				// creating a new row
+
+				XSSFRow newRow = addDataSheet.createRow(rowIndex2);
+
+				// in the current row setting the cell value for first name
+				newRow.createCell(rowOfCellIndex2).setCellValue(firstName);
+
+				// incrementing the rowOfCellIndex2 by 1 to create next cell every time until
+				// loop runs
+				rowOfCellIndex2++;
+
+				// in the current row setting the cell value for first name
+				newRow.createCell(rowOfCellIndex2).setCellValue(middleName);
+
+				rowOfCellIndex2++;
+
+				// in the current row setting the cell value for first name
+				newRow.createCell(rowOfCellIndex2).setCellValue(lastName);
+
+				rowOfCellIndex2++;
+
+				// in the current row setting the cell value for first name
+				newRow.createCell(rowOfCellIndex2).setCellValue(autoGeneratedId);
+
+				// identifying the path to save the file
+				outputFile = new FileOutputStream(
+						"./src/com/OHRMAddEmployeeDataResultFiles/AddEmployeeTestDataResult.xlsx");
+
+				// saving the operations perfomed on the workbook
+				addEmployeeWorkBook.write(outputFile);
+
+			}
+		}
+
+		// identifying the welcome admin element by id
+		By welcomeAdminElementProperty = By.linkText(properties.getProperty("loginWebPageWelcomeAdminElementProperty"));
+
+		// finding the welcome admin element by id
+		WebElement welcomeAdminElement = driver.findElement(welcomeAdminElementProperty);
+
+		// performing click operation on welcome admin element
+		welcomeAdminElement.click();
+		log.info("******* Successfully performed click operation on Welcome Admin Link********");
+
+		// Getting No such element exception in finding element logout
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/auth/logout">Logout</a>
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
+
+		// identifying the link element logout by link text
+		By logoutElementLocator = By.linkText(properties.getProperty("loginWebPageLogoutElementProperty"));
+
+		// finding the link element logout by link text
+		WebElement logoutElement = driver.findElement(logoutElementLocator);
+
+		// performing click operation on the link element logout
+		logoutElement.click();
+	}
+}

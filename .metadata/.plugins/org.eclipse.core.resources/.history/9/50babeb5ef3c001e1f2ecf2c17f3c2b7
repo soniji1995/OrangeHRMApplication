@@ -1,0 +1,19 @@
+package stepDefinition;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "OrangeApplicationFeatureFiles", glue = "stepDefinition",
+		// the glue will connect the feature file with the Selenium Webdriver Automation
+		// Test Script
+		monochrome = true,
+		dryRun=true
+// this removes the junk data in console
+)
+
+public class TestRunner {
+
+}

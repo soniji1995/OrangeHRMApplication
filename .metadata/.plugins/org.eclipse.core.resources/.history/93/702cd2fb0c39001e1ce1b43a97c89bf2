@@ -1,0 +1,86 @@
+package com.OrangeHRM;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class OHRMLoginTest extends BaseTest {
+
+	FileInputStream propertiesFile;
+	Properties properties;
+
+	@Test
+	public void loginFunctionalityTest() throws IOException {
+
+		// identify the properties file
+
+		propertiesFile = new FileInputStream("./src/com/PropertiesFiles/OHRMPropertyFile.properties");
+
+		// creating an object for properties class
+
+		properties = new Properties();
+
+		// loading the properties of file - using properties class object(properties)
+
+		properties.load(propertiesFile);
+
+		// identifying userName element
+		By userNameElementProperty = By.id(properties.getProperty("loginWebPageUserNameProperty"));
+
+		// finding userName element
+		WebElement userNameElement = driver.findElement(userNameElementProperty);
+
+		// sending the keys to user name element
+		// storing the user name into a variable
+
+		String userid = properties.getProperty("UserName");
+
+		userNameElement.sendKeys(userid);
+		// <input name="txtPassword" id="txtPassword" autocomplete="off"
+		// type="password">
+
+		// locator/attribute - name
+		// selector/value - txtPassword
+
+		// identifying password element
+		By passwordElementProperty = By.name(properties.getProperty("loginWebPagePasswordProperty"));
+
+		// finding password element
+		WebElement passwordElement = driver.findElement(passwordElementProperty);
+
+		// sending the keys to password element
+		// storing the password into a variable
+
+		String passWord = properties.getProperty("Password");
+		// sending the keys through a variable to password element text box
+
+		passwordElement.sendKeys(passWord);
+
+		// <input type="submit" name="Submit" class="button" id="btnLogin"
+		// value="LOGIN">
+
+		// locator/attribute - className
+		// selector/value - button
+
+		// identifying button element
+		By buttonElementProperty = By.className(properties.getProperty("loginWebPageLoginButtonProperty"));
+
+		// finding button element
+		WebElement buttonElement = driver.findElement(buttonElementProperty);
+
+		// performing click operation on button element
+		buttonElement.click();
+
+	}
+
+	public static void main(String[] args) throws IOException {
+
+		OHRMLoginTest loginTest = new OHRMLoginTest();
+
+	}
+
+}

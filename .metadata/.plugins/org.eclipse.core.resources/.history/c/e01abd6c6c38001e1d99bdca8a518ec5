@@ -1,0 +1,241 @@
+package com.OrangeHRM;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+public class OrangeHRM_LoginTest extends BaseTest {
+
+	// creating an object log for Logger class and passing the class name
+	// To store the Test execution results
+
+	Logger log = Logger.getLogger("OrangeHRM_LoginTest");
+
+	FileInputStream loginTestDataFile;
+	XSSFWorkbook workBook;
+	XSSFSheet testDataSheet;
+	XSSFRow testDataRow;
+	XSSFCell userNameTestDataRowOfCell;
+	FileOutputStream testResultFile;
+
+	FileInputStream propertiesFile;
+	Properties properties;
+
+	@Test(priority = 1, description = "Validating OrangeHRM Application Login Functionality")
+	public void oHRM_LoginTest() throws IOException {
+
+		// configuring the Log4j properties file
+		PropertyConfigurator.configure("Log4j.properties");
+
+		loginTestDataFile = new FileInputStream("./src/com/OHRMLoginTestDataFile/OHRMLoginTestData.xlsx");
+
+		// identify the workbook in the the file
+
+		workBook = new XSSFWorkbook(loginTestDataFile);
+
+		// identify the sheet in the workbook
+
+		testDataSheet = workBook.getSheet("Sheet1");
+
+		// identifying the row
+
+		testDataRow = testDataSheet.getRow(1);
+
+		userNameTestDataRowOfCell = testDataRow.getCell(0);
+
+		String userNameTestData = userNameTestDataRowOfCell.getStringCellValue();
+		// System.out.println("The user name is : "+userNameTestData);
+		log.info("The user name is : " + userNameTestData);
+
+		// identify the properties file
+
+		propertiesFile = new FileInputStream("./src/com/PropertiesFiles/OHRMPropertyFile.properties");
+
+		// creating an object for properties class
+
+		properties = new Properties();
+
+		// loading the properties of file - using properties class object(properties)
+
+		properties.load(propertiesFile);
+
+		// <input name="txtUsername" id="txtUsername" type="text">
+
+		// locator/attribute - id
+		// selector/value - txtUsername
+
+		// identifying userName element
+		By userNameElementProperty = By.id(properties.getProperty("loginWebPageUserNameProperty"));
+
+		// finding userName element(Text Box)
+		WebElement userNameElement = driver.findElement(userNameElementProperty);
+
+		// sending the keys through a variable to user name element text box
+		userNameElement.sendKeys(userNameTestData);
+
+		log.info("******* Successfully entered Username*********");
+
+		// <input name="txtPassword" id="txtPassword" autocomplete="off"
+		// type="password">
+
+		// locator/attribute - name
+		// selector/value - txtPassword
+
+		// identifying password element
+		By passwordElementProperty = By.name(properties.getProperty("loginWebPagePasswordProperty"));
+
+		// finding password element (Text Box)
+		WebElement passwordElement = driver.findElement(passwordElementProperty);
+
+		// finding the row of cell in which password data is stored
+		XSSFCell passwordTestDataCell = testDataRow.getCell(1);
+
+		// getting the cell value into a variable
+		String passwordTestData = passwordTestDataCell.getStringCellValue();
+		// System.out.println("The Password is :- "+passwordTestData);
+		log.info("The Password is :- " + passwordTestData);
+
+		// sending the keys through a variable to password element text box
+		passwordElement.sendKeys(passwordTestData);
+
+		log.info("**********Successfully entered password************");
+
+		// <input type="submit" name="Submit" class="button" id="btnLogin"
+		// value="LOGIN">
+
+		// locator/attribute - className
+		// selector/value - button
+
+		// identifying button element
+		By buttonElementProperty = By.className(properties.getProperty("loginWebPageLoginButtonProperty"));
+
+		// finding button element
+		WebElement buttonElement = driver.findElement(buttonElementProperty);
+
+		// to login
+		// performing click operation on button element
+		buttonElement.click();
+		log.info("Successfully performed click operation on login button");
+
+	}
+
+	@Test(priority = 2, description = "Validating Welcome Admin Functionality")
+	public void homePageWelcomeAdminTest() throws IOException {
+
+		// <a href="#" id="welcome" class="panelTrigger activated-welcome">Welcome
+		// Admin</a>
+
+		// finding the save button element using id
+		By welcomeAdminElementProperty = By.id(properties.getProperty("loginWebPageWelcomeAdminElementProperty"));
+
+		// finding the welcome admin element by id
+		WebElement welcomeAdminElement = driver.findElement(welcomeAdminElementProperty);
+
+		// storing client's expected requirement into a variable
+		// storing expected welcome text
+		String expected_WelcomeText = "Admin";
+		// System.out.println("The expected welcome text is :- "+expected_WelcomeText);
+		log.info("The expected welcome text is :- " + expected_WelcomeText);
+
+		// getting the actual welcome text
+		String actual_WelcomeText = welcomeAdminElement.getText();
+		// System.out.println("The actual welcome text is :- "+actual_WelcomeText);
+		log.info("The actual welcome text is :- " + actual_WelcomeText);
+
+		// comparison of actual and expected text
+		if (actual_WelcomeText.contains(expected_WelcomeText)) {
+
+			// if actual text contains expected text then this message gets printed
+			// System.out.println("Successfully navigated to OrangeHRM Application Home
+			// Page-PASS");
+			log.info("Successfully navigated to OrangeHRM Application Home Page-PASS");
+
+			// creating a new row to store the result
+
+			// creating a cell in active row to store the
+			XSSFCell newTestResultRowOfCell = testDataRow.createCell(2);
+
+			// storing the result in the cell value
+			newTestResultRowOfCell.setCellValue("Successfully navigated to OrangeHRM Application Home Page-PASS");
+		}
+
+		else {
+
+			// if actual text doesn't contain expected text then this message gets printed
+			// System.out.println("Failed to navigate to OrangeHRM Application Home
+			// Page-FAIL");
+			log.info("Failed to navigate to OrangeHRM Application Home Page-FAIL");
+
+			// storing the result in the cell value
+			XSSFCell newTestResultRowOfCell = testDataRow.createCell(2);
+
+			// storing the result in the cell value
+			newTestResultRowOfCell.setCellValue("Failed to navigate to OrangeHRM Application Home Page-PASS");
+
+		}
+
+		// identifying the path to store the output file
+
+		testResultFile = new FileOutputStream("./src/com/OHRMLoginTestResultFile/OHRMLoginTestResult.xlsx");
+
+		workBook.write(testResultFile);
+
+		// performing click operation on welcome admin element
+		welcomeAdminElement.click();
+
+		log.info("*****Successfully performed click operation on Welcome Admin Link*****");
+	}
+
+	@Test(priority = 3, description = "Testing the OrangeHRM logout functionality")
+	public void homePageLogoutTest() {
+
+		// Getting No such element exception in finding element logout
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/auth/logout">Logout</a>
+
+		// synchronization
+
+		// no such element comes when driver is unable meanwhile the
+		// application gets loaded on a webpage to locate an element
+
+		// synchronization
+
+		// Thread.sleep---java wait should not be used in real time
+
+		// but for driver to wait 10 seconds we have already used implicit of
+		// 10 seconds wait at the top of the script
+
+		// Let us request the webdriver to wait for another 10 seconds timeout
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.linkText(properties.getProperty("loginWebPageLogoutElementProperty"))));
+
+		// identifying logout element
+		By logoutElementLocator = By.linkText(properties.getProperty("loginWebPageLogoutElementProperty"));
+
+		// finding logout element
+		WebElement logoutElement = driver.findElement(logoutElementLocator);
+
+		// performing click operation on logout element
+		logoutElement.click();
+
+		log.info("*******Successfully performed click operation on Logout Link*******");
+
+	}
+
+}

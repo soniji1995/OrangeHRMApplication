@@ -1,0 +1,12 @@
+package com.OrangeHRMApplicationPagesTestCases;
+
+import com.BaseTest.BaseTest;
+
+public class OrangeHRMApplicationHomePageTest extends BaseTest {
+
+	@Test(priority = 1, description = "validating login functionality")
+	public void loginFunctionalityTest() {
+
+	}
+
+}

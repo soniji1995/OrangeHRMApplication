@@ -1,0 +1,10 @@
+io.cucumber.junit.UndefinedStepException: The step 'User should logout from the OrangeHRM Application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("User should logout from the OrangeHRM Application")
+public void user_should_logout_from_the_orange_hrm_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,13 @@
+package com.OrangeHRM;
+
+import org.testng.annotations.Test;
+
+public class Abcde extends Abcd {
+	@Test(priority = 2)
+	public void tech() {
+		Abcd obj = new Abcd();
+		obj.live();
+		obj.live2();
+		System.out.println("Program run successfully");
+	}
+}

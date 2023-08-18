@@ -1,0 +1,7 @@
+package com.OrangeHRMApplicationPagesTestCases;
+
+import com.BaseTest.BaseTest;
+
+public class OrangeHRMApplicationHomePageTest extends BaseTest {
+
+}

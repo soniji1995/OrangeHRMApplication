@@ -1,0 +1,153 @@
+package stepDefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+
+	WebDriver driver;
+	String applicationUrlAddress = "http://127.0.01/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard";
+
+	WebElement welcomeAdminElement;
+
+	@Given("^User should Open Chrome Browser on the System$")
+	public void user_should_Open_Chrome_Browser_on_the_System() {
+
+		// Automating chrome browser
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Dell\\OneDrive\\Desktop\\Application Under Testing\\OrangeHRMApplicationTesting_Cucumber\\BrowserDriverFiles\\chromedriver.exe");
+
+		driver = new ChromeDriver();
+	}
+
+	@When("^User enters valid Url Address of OrangeHRM Application$")
+	public void user_enters_valid_Url_Address_of_OrangeHRM_Application() {
+
+		driver.get(applicationUrlAddress);
+
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+
+	@Then("^User should be navigated to OrangeHRM Application LogIn WebPage$")
+	public void user_should_be_navigated_to_OrangeHRM_Application_LogIn_WebPage() {
+
+		By loginPanelHeadingProperty = By.id("logInPanelHeading");
+
+		WebElement loginPanelHeadingElement = driver.findElement(loginPanelHeadingProperty);
+
+		String expected_LoginPanelHeadingText = "LOGIN Panel";
+
+		System.out.println("The expected login page Login Panel Text is :- " + expected_LoginPanelHeadingText);
+
+		String actual_LoginPanelHeadingText = loginPanelHeadingElement.getText();
+
+		System.out.println("The actual login page Login Panel Text is :- " + actual_LoginPanelHeadingText);
+
+		if (actual_LoginPanelHeadingText.contains(expected_LoginPanelHeadingText)) {
+
+			System.out.println("Successfully navigated to OrangeHRM Application Login Page- PASS");
+		}
+
+		else {
+
+			System.out.println("Failed to navigate to OrangeHRM Application Login Page - FAIL");
+		}
+
+	}
+
+	@Then("User should enter UserName and Password")
+	public void user_should_enter_user_name_and_password() {
+
+		By userNameElementProperty = By.id("txtUsername");
+
+		WebElement userNameElement = driver.findElement(userNameElementProperty);
+
+		userNameElement.sendKeys("rahulsoni");
+
+		// <input name="txtPassword" id="txtPassword" autocomplete="off"
+		// type="password">
+
+		// locator/attribute - name
+		// selector/value - txtPassword
+
+		By passwordElementProperty = By.name("txtPassword");
+
+		WebElement passwordElement = driver.findElement(passwordElementProperty);
+
+		passwordElement.sendKeys("Rahul@1995");
+
+	}
+
+	@Then("User should click on login button")
+	public void user_should_click_on_login_button() {
+
+		By buttonElementProperty = By.className("button");
+
+		WebElement buttonElement = driver.findElement(buttonElementProperty);
+
+		buttonElement.click();
+
+		By welcomeAdminElementProperty = By.id("welcome");
+
+		welcomeAdminElement = driver.findElement(welcomeAdminElementProperty);
+
+		String expected_WelcomeText = "Welcome";
+		System.out.println("The expected welcome text is :- " + expected_WelcomeText);
+
+		String actual_WelcomeText = welcomeAdminElement.getText();
+		System.out.println("The actual welcome text is :- " + actual_WelcomeText);
+
+		if (actual_WelcomeText.contains(expected_WelcomeText)) {
+
+			System.out.println("The expected welcome text exists");
+		}
+
+		else {
+			System.out.println("The expected welcome text does not exist");
+		}
+	}
+
+	@Then("User should logout from the OrangeHRM Application")
+	public void user_should_logout_from_the_orange_hrm_application() {
+
+		welcomeAdminElement.click();
+
+		// Getting No such element exception in finding element logout
+
+		// <a href="/OrangeHrm-4.2.0.1/symfony/web/index.php/auth/logout">Logout</a>
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
+
+		By logoutElementLocator = By.linkText("Logout");
+
+		WebElement logoutElement = driver.findElement(logoutElementLocator);
+
+		logoutElement.click();
+
+	}
+
+	@Then("^User should close the Browser with the OrangeHRMApplication Opened$")
+	public void user_should_close_the_Browser_with_the_OrangeHRMApplication_Opened() {
+
+		driver.quit();
+
+	}
+
+}

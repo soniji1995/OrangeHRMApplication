@@ -1,0 +1,39 @@
+package com.BaseTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseTest {
+
+	String applicationUrlAddress = "http://127.0.01/OrangeHrm-4.2.0.1/symfony/web/index.php/dashboard";
+
+	public static WebDriver driver;
+
+	@BeforeMethod
+	public void setUp() {
+
+		// Automating chrome browser
+
+		System.setProperty("webdriver.chrome.driver", "./BrowserDriverFiles/chromedriver.exe");
+
+		driver = new ChromeDriver();
+
+		driver.get(applicationUrlAddress);
+
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+
+	public void tearDown() {
+
+		driver.quit();
+	}
+
+}
